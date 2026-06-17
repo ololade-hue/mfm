@@ -1,0 +1,75 @@
+/* GENERAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.page-body {
+    background: linear-gradient(135deg, #667eea 0%, #a24b9d94 100%);
+    color: white;
+    padding: 60px 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#page-body {
+    background-image: url('lol.png');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 60px 30px;
+}
+
+
+.container {
+    background: linear-gradient(135deg, #9a66ea 0%, #774ba2cf 100%);
+    color: white;
+    padding: 40px 30px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+footer .copyright {
+    font-size: 12px;
+    color: #aaa;
+}
+.footer .footer-quote {
+    font-size: 40px;
+    justify-content: center;
+    gap: 10px;
+}
+.footer-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #ff6b6b;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}

@@ -1,0 +1,111 @@
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #c96bff;
+        }
+
+       
+        .hero {
+            
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .healing-container {
+            max-width: 950px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .scripture-banner {
+            background: #ffffff;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-left: 5px solid #667eea;
+            margin-bottom: 40px;
+            color: #333;
+            font-style: italic;
+        }
+
+        .healing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+            color: #333;
+        }
+
+        .healing-card {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+            border-top: 3px solid #c96bff;
+        }
+
+        .healing-card h4 {
+            color: #203a43;
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+
+        .action-banner {
+            background: linear-gradient(135deg, #1a1a1a 0%, #252525 100%);
+            color: white;
+            padding: 35px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 50px;
+            border: 1px solid #333;
+        }
+
+        .action-btn {
+            display: inline-block;
+            margin-top: 15px;
+            background: #dd3636;
+            color: white;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .action-btn:hover {
+            background: #b52626;
+        }
+
+        

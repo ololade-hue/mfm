@@ -1,0 +1,233 @@
+/* SERVICES PAGE STYLES */
+
+#page-body {
+    background-image: url('MFM_2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 60px 30px;
+}
+
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 50px 30px;
+    text-align: center;
+    
+}
+
+.hero h2 {
+    font-size: 38px;
+    margin: 0 0 20px 0;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.services-main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 60px;
+}
+
+.service-card {
+    background: linear-gradient(45deg,  rgba(93, 17, 192, 0.7), rgba(192, 17, 175, 0.7), rgba(107, 17, 192, 0.7)) ;
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+ 
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    color: white;
+    font-family: cursive;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.service-card p {
+    color: #f0f0f0;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.service-card button {
+    padding: 10px 25px;
+    background-color: #c91e63;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+
+.button-link {
+    padding: 10px 25px;
+    background: linear-gradient(45deg, #5709e8db, #1e08e6);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button-link:hover {
+    background-color: #a01650;
+}
+
+.service-card button:hover {
+    background-color: #a01650;
+}
+.btn-video{
+    justify-self: center;
+    transition: 0.5s ease;
+
+}
+
+.btn-video:hover {
+    transform: translateY(-8px); 
+
+    box-shadow: 0 15px 25px rgba(154, 22, 207, 0.2);
+}
+
+
+/* SOCIAL MEDIA */
+.social-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 50px 30px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.social-section h2 {
+    font-size: 32px;
+    margin: 0 0 10px 0;
+}
+
+.social-section p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.youtube {
+    background-color: #ff0000;
+}
+
+.youtube:hover {
+    background-color: #cc0000;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d92e7f);
+}
+
+.instagram:hover {
+    opacity: 0.8;
+}
+
+.facebook {
+    background-color: #1877f2;
+}
+
+.facebook:hover {
+    background-color: #0a66c2;
+}
+
+.spotify {
+    background-color: #1db954;
+}
+
+.spotify:hover {
+    background-color: #1ed760;
+}
+
+
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+footer .copyright {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.footer-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #ff6b6b;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}

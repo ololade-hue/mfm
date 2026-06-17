@@ -1,0 +1,318 @@
+/* GENERAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, #2d3875, #0c208d, );
+    color: #400c8d;
+}
+h1:hover{
+    cursor: pointer;
+    color:  #dd3636; 
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #c96bff;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #dd3636;
+}
+
+/* DROPDOWN MENU */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #2a2a2a;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown-menu a {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #dd3636;
+    color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+/* ACTION BUTTONS */
+.btn-live {
+    background-color: #c91e63;
+    padding: 8px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-live:hover {
+    background-color: #a01650;
+}
+
+.btn-give {
+    border: 2px solid #ff6b35;
+    color: #ff6b35;
+    padding: 6px 18px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.btn-give:hover {
+    background-color: #ff6b35;
+    color: white;
+}
+
+.btn-bible{
+    padding: 10px 25px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    padding: 10px; 
+    border-radius: 4px;
+    text-decoration: none; 
+    text-align: center; 
+}
+.btn-bible:hover {
+    background-color: #5568d3;
+}
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin: 0 0 20px 0;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+/* MAIN CONTENT */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* SEARCH & FILTER */
+.controls {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.search-input {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.category-select {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-add {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-add:hover {
+    background-color: #e55a5a;
+}
+
+/* BOOKS GRID */
+.books-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.book-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.book-card h3 {
+    margin-top: 0;
+    color: #1a1a1a;
+    font-size: 18px;
+}
+
+.book-card p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.book-card .category {
+    color: #666;
+    font-weight: bold;
+}
+
+.book-card button {
+    width: 100%;
+    padding: 10px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.book-card button:hover {
+    background-color: #5568d3;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+footer .copyright {
+    font-size: 12px;
+    color: #aaa;
+}
+.footer .footer-quote {
+    font-size: 40px;
+    justify-content: center;
+    gap: 10px;
+}
+.footer-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #ff6b6b;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+

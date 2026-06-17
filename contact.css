@@ -1,0 +1,272 @@
+
+.services-main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 60px;
+}
+
+.service-card {
+    background: white;
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    color: #1a1a1a;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.service-card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.service-card button {
+    padding: 10px 25px;
+    background-color: #c91e63;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.service-card button:hover {
+    background-color: #a01650;
+}
+
+/* SOCIAL MEDIA */
+.social-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 50px 30px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.social-section h2 {
+    font-size: 32px;
+    margin: 0 0 10px 0;
+}
+
+.social-section p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.youtube {
+    background-color: #ff0000;
+}
+
+.youtube:hover {
+    background-color: #cc0000;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.instagram {
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d92e7f);
+}
+
+.instagram:hover {
+    opacity: 0.8;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.facebook {
+    background-color: #1877f2;
+}
+
+.facebook:hover {
+    background-color: #0a66c2;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.spotify {
+    background-color: #1db954;
+}
+
+.spotify:hover {
+    background-color: #1ed760;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(7, 61, 28, 0.2);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .social-section {
+        padding: 35px 20px;
+    }
+
+    .social-section h2 {
+        font-size: 24px;
+    }
+
+    .social-links {
+        gap: 10px;
+    }
+
+    .social-btn {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+}
+
+/* GET IN TOUCH FORM */
+.form-section {
+    background: #f8f9fa;
+    padding: 60px 30px;
+    margin: 40px 0;
+    border-radius: 8px;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-container h2 {
+    font-size: 28px;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: inherit;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #c91e63;
+    box-shadow: 0 0 5px rgba(201, 30, 99, 0.3);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+    padding: 12px 15px;
+}
+
+.form-section button {
+    align-self: center;
+    margin-top: 10px;
+    padding: 12px 40px;
+    background-color: #c91e63;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.form-section button:hover {
+    background-color: #a01650;
+    transform: translateY(-2px);
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+footer .copyright {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.footer-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #ff6b6b;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
