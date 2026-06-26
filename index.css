@@ -32,6 +32,23 @@
     line-height: 1.6;
 }
 
+.hero h2{
+    animation: fadeInDown 0.8s ease both;
+
+}
+.hero p{
+    animation: fadeInDown 0.8s ease both;
+}
+.hero a{
+    animation: fadeInDown 0.8s ease both;
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateX(-30px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+
 .cta-button {
     display: inline-block;
     background-color: #dd3636;
